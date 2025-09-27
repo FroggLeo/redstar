@@ -209,6 +209,9 @@ texture = ExtResource("2_e2u21")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_j2q8x")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(1.5, 1.5)
+
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD+/wEAAQABAAAAAAD//wEAAQACAAAAAAAAAAEAAQADAAAAAAABAAEAAQAEAAAAAAACAAEAAQAFAAAAAAD9/wEAAQAAAAAAAAD9/wAAAQAAAAEAAAA=")
 tile_set = SubResource("TileSet_qn3nj")
