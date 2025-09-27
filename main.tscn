@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://dcuvij4dc8n64"]
+[gd_scene load_steps=3 format=3 uid="uid://dcuvij4dc8n64"]
 
 [ext_resource type="Script" uid="uid://bg405d6u6vwl8" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://x3clb3pbtucm" path="res://quit.gd" id="2_0xm2m"]
 
-[node name="Main" type="Node2D"]
+[node name="menu" type="Node2D"]
 position = Vector2(2176, -5888)
 script = ExtResource("1_ig7tw")
 
@@ -11,6 +12,9 @@ offset_left = -1715.0
 offset_top = 6028.0
 offset_right = -1457.0
 offset_bottom = 6171.0
+theme_override_colors/font_color = Color(0.8655437, 0.8761293, 0.8873379, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
@@ -19,6 +23,10 @@ offset_top = 6283.0
 offset_right = -1457.0
 offset_bottom = 6429.0
 tooltip_text = "You want to quit?"
+theme_override_font_sizes/font_size = 30
 text = "Quit"
+script = ExtResource("2_0xm2m")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Quit" to="Quit" method="_on_quit_pressed"]

@@ -11,5 +11,6 @@ config_version=5
 [application]
 
 config/name="redstar"
+run/main_scene="uid://dcuvij4dc8n64"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
