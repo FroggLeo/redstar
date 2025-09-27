@@ -8,24 +8,41 @@ position = Vector2(2176, -5888)
 script = ExtResource("1_ig7tw")
 
 [node name="Play" type="Button" parent="."]
-offset_left = -1715.0
-offset_top = 6028.0
-offset_right = -1457.0
-offset_bottom = 6171.0
-theme_override_colors/font_color = Color(0.8655437, 0.8761293, 0.8873379, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+offset_left = -1743.0
+offset_top = 6196.0
+offset_right = -1485.0
+offset_bottom = 6339.0
+theme_override_colors/font_color = Color(0.86419374, 0.8758549, 0.8835756, 1)
+theme_override_colors/font_outline_color = Color(0.71456254, 0.24422285, 0.22606206, 1)
+theme_override_colors/icon_normal_color = Color(0.6168049, 0.59788334, 3.85046e-07, 1)
 theme_override_font_sizes/font_size = 30
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
-offset_left = -1713.0
-offset_top = 6283.0
-offset_right = -1457.0
-offset_bottom = 6429.0
+offset_left = -1741.0
+offset_top = 6366.0
+offset_right = -1485.0
+offset_bottom = 6512.0
 tooltip_text = "You want to quit?"
 theme_override_font_sizes/font_size = 30
 text = "Quit"
 script = ExtResource("2_0xm2m")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -2141.0
+offset_top = 5894.0
+offset_right = -1063.0
+offset_bottom = 6167.0
+theme_override_colors/font_color = Color(0.82516795, 0.16067842, 0.26453847, 1)
+theme_override_font_sizes/font_size = 200
+text = "RedStar OS"
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(0.8635846, 0.006677588, 0.18622842, 1)
+offset_left = -2145.0
+offset_top = 5908.0
+offset_right = -1059.0
+offset_bottom = 6159.0
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
