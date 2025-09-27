@@ -107,3 +107,9 @@ zoom = Vector2(1.5, 1.5)
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD+/wEAAAAAAAEAAAD//wEAAAABAAEAAAAAAAEAAAACAAEAAAABAAEAAAADAAEAAAACAAEAAAAEAAEAAAD8/wUAAAAAAAEAAAD9/wUAAAABAAEAAAD+/wUAAAACAAEAAAD//wUAAAADAAEAAAAAAAUAAAAEAAEAAAD+/wMAAAAAAAMAAAD//wMAAAABAAMAAAAAAAMAAAACAAMAAAABAAMAAAADAAMAAAA=")
 tile_set = SubResource("TileSet_e2u21")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -381.0
+offset_top = -216.0
+offset_right = 385.0
+offset_bottom = 217.0

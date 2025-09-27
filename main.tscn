@@ -1,13 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://dcuvij4dc8n64"]
+[gd_scene load_steps=4 format=3 uid="uid://dcuvij4dc8n64"]
 
 [ext_resource type="Script" uid="uid://bg405d6u6vwl8" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://x3clb3pbtucm" path="res://quit.gd" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://cma04edtq71yp" path="res://assets/IMG_6367.jpg" id="3_h2yge"]
 
 [node name="menu" type="Node2D"]
 position = Vector2(2176, -5888)
 script = ExtResource("1_ig7tw")
 
 [node name="Play" type="Button" parent="."]
+z_index = 1
 offset_left = -1743.0
 offset_top = 6196.0
 offset_right = -1485.0
@@ -19,6 +21,7 @@ theme_override_font_sizes/font_size = 30
 text = "Play"
 
 [node name="Quit" type="Button" parent="."]
+z_index = 1
 offset_left = -1741.0
 offset_top = 6366.0
 offset_right = -1485.0
@@ -43,6 +46,23 @@ offset_left = -2145.0
 offset_top = 5908.0
 offset_right = -1059.0
 offset_bottom = 6159.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -4
+offset_left = -1476.0
+offset_top = 6172.0
+offset_right = -1034.0
+offset_bottom = 6531.0
+texture = ExtResource("3_h2yge")
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -2161.0
+offset_top = 6193.0
+offset_right = -1752.0
+offset_bottom = 6515.0
+texture = ExtResource("3_h2yge")
+expand_mode = 2
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
