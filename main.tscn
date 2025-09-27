@@ -8,6 +8,15 @@
 position = Vector2(2176, -5888)
 script = ExtResource("1_ig7tw")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+z_index = -4
+offset_left = -2181.0
+offset_top = 5897.0
+offset_right = -1026.0
+offset_bottom = 6526.0
+texture = ExtResource("3_h2yge")
+expand_mode = 2
+
 [node name="Play" type="Button" parent="."]
 z_index = 1
 offset_left = -1743.0
@@ -46,23 +55,6 @@ offset_left = -2145.0
 offset_top = 5908.0
 offset_right = -1059.0
 offset_bottom = 6159.0
-
-[node name="TextureRect" type="TextureRect" parent="."]
-z_index = -4
-offset_left = -1476.0
-offset_top = 6172.0
-offset_right = -1034.0
-offset_bottom = 6531.0
-texture = ExtResource("3_h2yge")
-expand_mode = 2
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = -2161.0
-offset_top = 6193.0
-offset_right = -1752.0
-offset_bottom = 6515.0
-texture = ExtResource("3_h2yge")
-expand_mode = 2
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
